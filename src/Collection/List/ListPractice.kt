@@ -6,6 +6,8 @@ package Collection.List
 //Print the last element
 //
 //Print the element at index 2
+
+
 fun printFirstAndLast(){
         val alist : MutableList<Int> = mutableListOf(1,2,3,4,5)
         //first element
