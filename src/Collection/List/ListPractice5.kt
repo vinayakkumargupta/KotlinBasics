@@ -19,6 +19,9 @@ fun findGst(){
 
 fun finda(){
     val words = listOf("apple", "banana", "avocado", "cat")
+    println(words.sumOf{
+        it.count{it == 'a'}
+    })
 
 }
 
@@ -26,4 +29,5 @@ fun finda(){
 fun main(){
    squareList()
     findGst()
+    finda()
 }
