@@ -85,6 +85,83 @@ package Collection.List
 //Use nested if or when to implement a simple calculator (+, -, *, /).
 
 
+fun question17(){
+    //prime number
+    val num = 6
+    var isPrime = true
+
+    for (i in 2 until num) {
+        if (num % i == 0) {
+            isPrime = false
+            break
+        }
+    }
+
+    println(isPrime)
+
+}
+
+fun question16(){
+    val table = 5
+    for(i in 1..10){
+        println("$table x $i = ${table*i}")
+    }
+}
+
+
+fun question15(){
+    val age = 17
+    when(age){
+        in 0..12 -> println("Child")
+        in 13..19 -> println("Teen")
+        in  20..59 -> println("Adult")
+    }
+}
+
+
+fun question14(){
+    //postive from a list
+    val list = listOf(-2, 3, -1, 5)
+    println(list.filter { it>0 })
+}
+
+
+fun question13(){
+    //reverse a number
+    var num = 12023
+    var rem = 0
+    while (num>0){
+        rem = rem*10 + num%10
+        num = num/10
+
+    }
+    println(rem)
+}
+
+
+fun question12(){
+    //find factorial
+    val num = 4
+    //0,1,1,2,3,5
+    var fact = 1
+    for(i in 1..num){
+      fact *= i
+    }
+    println(fact)
+}
+
+
+fun question11(){
+    val num = 11
+    if(num % 3 == 0 && num % 5 == 0){
+        println("Divisble by 3 and 5 ")
+    }else{
+        println("Dont divible by 3 and 5")
+    }
+
+}
+
+
 
 
 fun question10(){
@@ -206,4 +283,12 @@ fun main(){
     evenOrOdd()
     question9()
     question10()
+    question11()
+    question12()
+    question13()
+    question14()
+    question15()
+    question16()
+    question17()
+
 }
