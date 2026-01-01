@@ -85,6 +85,58 @@ package Collection.List
 //Use nested if or when to implement a simple calculator (+, -, *, /).
 
 
+fun question21(){
+   for(i in 1..5){
+       for(s in 1..i){
+           print("1")
+       }
+       println()
+   }
+
+}
+fun question22(){
+    for(i in 5 downTo 1){
+        for(j in 1..i){
+            print("*")
+        }
+        println()
+    }
+}
+
+fun question20(){
+    val list = listOf(3, 9, 2, 8)
+    var max = list[0]
+    for (i in list){
+        if(i > max) max = i
+    }
+    println(max)
+}
+
+fun question19(){
+//Print all numbers from 1 to 50, but:
+//Skip multiples of 5
+//Stop completely if number reaches 40
+    for (i in 1..50) {
+        if (i == 40) break
+        if (i % 5 == 0) continue
+        println(i)
+    }
+
+}
+
+
+fun question18(){
+    //how many digits
+    var num = 123456
+    val i = 0
+    var count = 0
+   while (i<num){
+       num = num/10
+       count++
+   }
+    println(count)
+}
+
 fun question17(){
     //prime number
     val num = 6
@@ -290,5 +342,9 @@ fun main(){
     question15()
     question16()
     question17()
-
+    question18()
+    question19()
+    question20()
+    question21()
+    question22()
 }
