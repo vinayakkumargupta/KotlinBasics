@@ -84,6 +84,12 @@ package Collection.List
 //Write a program that counts how many numbers in a list are greater than 10.
 //Use nested if or when to implement a simple calculator (+, -, *, /).
 
+fun question23(){
+    for(i in 1..100){
+        println(i)
+    }
+}
+
 
 fun question21(){
    for(i in 1..5){
@@ -347,4 +353,5 @@ fun main(){
     question20()
     question21()
     question22()
+    question23()
 }
