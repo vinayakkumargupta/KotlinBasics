@@ -125,6 +125,20 @@ fun question9(){
     }
 
     }
+fun question10(){
+    for (i in 1..5){
+        for (j in 1..i){
+            print("*")
+        }
+        println()
+    }
+    for (i in 2..5){
+        for (j in 1..(5-i+1)){
+            print("*")
+        }
+        println()
+    }
+}
 
 fun main(){
     question1()
@@ -136,5 +150,6 @@ fun main(){
     question7()
     question8()
     question9()
+    question10()
 
 }
