@@ -124,7 +124,8 @@ fun question9(){
         println()
     }
 
-    }
+}
+
 fun question10(){
     for (i in 1..5){
         for (j in 1..i){
@@ -139,7 +140,6 @@ fun question10(){
         println()
     }
 }
-//
 
 fun main(){
     question1()
@@ -152,5 +152,4 @@ fun main(){
     question8()
     question9()
     question10()
-
 }
