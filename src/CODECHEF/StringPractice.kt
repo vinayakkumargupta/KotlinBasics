@@ -21,6 +21,27 @@ fun questionS7(){
         print("Not Palindrome")
     }
 }
+fun que() {
+    var t = readLine()!!.toInt()
+    repeat(t){
+        var n = readLine()!!.toInt()
+        //Check if n is less than or equal to 100
+        if(n <= 100)
+        {
+            println("Good")
+        }
+        //2nd condition in the problem
+        else if(n > 100 || n <= 200)
+        {
+            println("Better")
+        }
+        //3rd condition in the problem
+        else if( n > 200)
+        {
+            println("Best")
+        }
+    }
+}
 
 
 fun questionS6(){
@@ -95,6 +116,6 @@ fun questionS2(){
 
 
 fun main(){
-    questionS7()
+    que()
 
 }

@@ -141,6 +141,18 @@ fun question10(){
     }
 }
 
+fun twoSum(nums: IntArray, target: Int): IntArray {
+    var newMap = mutableMapOf<Int, Int>()
+    for(i in nums.indices){
+        var comp = target - nums[i]
+        if(newMap.containsKey(comp)){
+            return intArrayOf(newMap[comp]!!,i)
+        }
+        newMap[nums[i]] = i
+    }
+    return intArrayOf()
+}
+
 fun main(){
     question1()
     question2()
