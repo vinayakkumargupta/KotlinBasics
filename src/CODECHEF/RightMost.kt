@@ -17,6 +17,8 @@ fun rightMost(){
         if(largest<=num[i]){
             largest = num[i]
             right = i // index of largest num
+
+
         }
     }
     print(largest)
