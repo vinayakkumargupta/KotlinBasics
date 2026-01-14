@@ -11,6 +11,8 @@ fun rightMost(){
     val num = readLine()!!.split(" ").map(String::toInt).toIntArray()
     //find the largest
     val nu = intArrayOf()
+    var s = "sjhsjs"
+    s.reversed()
     var largest = num[0]
     var right = 0
     for(i in 0 until num.size){
