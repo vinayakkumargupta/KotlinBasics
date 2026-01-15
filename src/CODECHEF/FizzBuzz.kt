@@ -15,6 +15,17 @@ fun fizzBuzz(n: Int): List<String> {
     }
     return result
 }
+fun mySqrt(x: Int): Int {
+    if (x < 2) return x
+
+    var r = x.toLong()
+
+    while (r * r > x) {
+        r = (r + x / r) / 2
+    }
+
+    return r.toInt()
+}
 
 fun main(){
     println(fizzBuzz(5))
